@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+	<category label="General">
+	<setting id="email" label="30000" type="text" default=""/>
+	<setting id="password" label="30001" type="text" option="hidden" default=""/>
+	</category>
+</settings>
