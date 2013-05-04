@@ -51,7 +51,7 @@ def HOME():
 def GETMATCHES ():
 	
 	try:
-		url = 'http://m.willow.tv/Default.asp?e=1#animations'
+		url = 'http://m.willow.tv/iOS.asp?e=#animations'
 		req = urllib2.Request(url)
 		req.add_header('User-Agent', 'Mozilla/5.0 (iPad; CPU OS 5_0 like Mac OS X) AppleWebKit/534.46 (KHTML, like Gecko) Version/5.1 Mobile/9A334 Safari/7534.48.3')
 		response = urllib2.urlopen(req)
@@ -62,7 +62,7 @@ def GETMATCHES ():
 		
 		# myRegex = re.compile('<ul class=\'edit rounded\'><li><font color=\'#AA0000\'>.+</font><hr /><br /><font color=\'\'>(.+?)</font><br /><br /><br /><font color=\'black\'><video controls width=\'320\' height=\'240\' x-webkit-airplay=\'allow\' src=\'(.+?)\'></video>')
 
-		myRegex2 = re.compile('<font color="black"><a href="(.+?)" rel="external" class="submit whiteButton">(.+?)</a></font>');
+		myRegex2 = re.compile('<font color="black"><a.+?href="(.+?)" rel="external" class="submit whiteButton">(.+?)</a></font>');
 		
 		myRegex = re.compile('<ul class="edit rounded"><li>.+><font color="">(.+?)</font><br /><br /><br /><font color="black">(.+?)</ul>');
 		
